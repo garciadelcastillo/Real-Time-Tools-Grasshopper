@@ -27,6 +27,9 @@ namespace DataToolsGrasshopper.IPC
         {
         }
 
+        public override GH_Exposure Exposure => GH_Exposure.secondary;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.icons_10___http_get;
+
         /// <summary>
         /// Registers all the input parameters for this component.
         /// </summary>
@@ -93,19 +96,6 @@ namespace DataToolsGrasshopper.IPC
             reader.Close();
             dataStream.Close();
             res.Close();
-        }
-
-        /// <summary>
-        /// Provides an Icon for the component.
-        /// </summary>
-        protected override System.Drawing.Bitmap Icon
-        {
-            get
-            {
-                //You can add image files to your project resources and access them like this:
-                // return Resources.IconForThisComponent;
-                return null;
-            }
         }
 
         /// <summary>

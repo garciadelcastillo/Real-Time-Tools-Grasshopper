@@ -71,7 +71,7 @@ namespace DataToolsGrasshopper.IPC.HTTP
 
             request.Timeout = timeout;
 
-            // Parameters can be added to the query URL
+            // Parameters can be added to the query URLs
             //var postData = "thing1=" + Uri.EscapeDataString("hello");
             //postData += "&thing2=" + Uri.EscapeDataString("world");
 

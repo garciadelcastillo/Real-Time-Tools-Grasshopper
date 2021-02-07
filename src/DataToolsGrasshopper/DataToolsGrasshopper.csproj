@@ -92,6 +92,7 @@
     <Compile Include="Utils\Compare.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons_10 - http_get.png" />
     <Content Include="Resources\icons_boolean_gate.png" />
     <Content Include="Resources\icons_data_recorder.png" />
     <Content Include="Resources\icons_integer_gate.png" />

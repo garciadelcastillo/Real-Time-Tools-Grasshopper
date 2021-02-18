@@ -27,8 +27,8 @@ namespace DataToolsGrasshopper.IPC
         {
         }
 
-        public override GH_Exposure Exposure => GH_Exposure.secondary;
-        protected override System.Drawing.Bitmap Icon => Properties.Resources.icons_10___http_get;
+        public override GH_Exposure Exposure => GH_Exposure.primary;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.icons_http_get;
 
         /// <summary>
         /// Registers all the input parameters for this component.

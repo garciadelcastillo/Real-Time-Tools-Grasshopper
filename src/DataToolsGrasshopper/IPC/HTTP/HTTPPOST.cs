@@ -25,7 +25,10 @@ namespace DataToolsGrasshopper.IPC.HTTP
         public HTTPPOST() : base("HTTP-POST",
               "IPC", "Handles HTTP POST request")
         {
+
         }
+        public override GH_Exposure Exposure => GH_Exposure.primary;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.icons_http_post;
 
         /// <summary>
         /// Registers all the input parameters for this component.
@@ -55,7 +58,7 @@ namespace DataToolsGrasshopper.IPC.HTTP
             string url = "";
             access.GetData(0, ref url);
 
-            int timeout = 500;
+            int timeout = 5000;
             access.GetData(1, ref timeout);
 
             string JSONcocntent = "";
@@ -91,19 +94,6 @@ namespace DataToolsGrasshopper.IPC.HTTP
             var responseString = new StreamReader(res.GetResponseStream()).ReadToEnd();
 
             access.SetData(0, responseString);
-        }
-
-        /// <summary>
-        /// Provides an Icon for the component.
-        /// </summary>
-        protected override System.Drawing.Bitmap Icon
-        {
-            get
-            {
-                //You can add image files to your project resources and access them like this:
-                // return Resources.IconForThisComponent;
-                return null;
-            }
         }
 
         /// <summary>

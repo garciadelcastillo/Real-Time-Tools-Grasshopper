@@ -95,6 +95,8 @@
     <None Include="Resources\icons_10 - http_get.png" />
     <Content Include="Resources\icons_boolean_gate.png" />
     <Content Include="Resources\icons_data_recorder.png" />
+    <None Include="Resources\icons_http_get.png" />
+    <None Include="Resources\icons_http_post.png" />
     <Content Include="Resources\icons_integer_gate.png" />
     <Content Include="Resources\icons_line_gate.png" />
     <Content Include="Resources\icons_number_gate.png" />
@@ -109,7 +111,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="IPC\WebSocket\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

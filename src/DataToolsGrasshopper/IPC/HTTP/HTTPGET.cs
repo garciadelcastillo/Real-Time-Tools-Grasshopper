@@ -57,7 +57,7 @@ namespace DataToolsGrasshopper.IPC
             string url = "";
             access.GetData(0, ref url);
 
-            int timeout = 500;
+            int timeout = 5000;
             access.GetData(1, ref timeout);
 
             bool send = false;

@@ -80,6 +80,7 @@
     <Compile Include="Data\Gates\VectorGate.cs" />
     <Compile Include="GHDDTComponent.cs" />
     <Compile Include="IPC\GHIPCComponent.cs" />
+    <Compile Include="IPC\HTTP\Class1.cs" />
     <Compile Include="IPC\HTTP\HTTPGET.cs" />
     <Compile Include="IPC\HTTP\HTTPPOST.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

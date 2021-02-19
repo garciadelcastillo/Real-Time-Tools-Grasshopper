@@ -20,7 +20,7 @@ namespace DataToolsGrasshopper.IPC.HTTP
     public class HTTPPOST : GHIPCComponent
     {
         /// <summary>
-        /// Initializes a new instance of the MyComponent1 class.
+        /// Initializes a new instance of the HTTPPOST class.
         /// </summary>
         public HTTPPOST() : base("HTTP-POST",
               "IPC", "Handles HTTP POST request")
@@ -37,7 +37,7 @@ namespace DataToolsGrasshopper.IPC.HTTP
         {
             pManager.AddTextParameter("url", "U", "URL for HTTP server.", GH_ParamAccess.item);
             pManager.AddIntegerParameter("timeout", "T", "Time out for HTTP GET request", GH_ParamAccess.item);
-            pManager.AddTextParameter("JSONContent", "J", "JSON Content to Send?", GH_ParamAccess.item);
+            pManager.AddGenericParameter("JSONContent", "J", "JSON Content to Send?", GH_ParamAccess.item);
         }
 
         /// <summary>
@@ -61,8 +61,8 @@ namespace DataToolsGrasshopper.IPC.HTTP
             int timeout = 5000;
             access.GetData(1, ref timeout);
 
-            string JSONcocntent = "";
-            access.GetData(2, ref JSONcocntent);
+            string JSONcontent = "";
+            access.GetData(2, ref JSONcontent);
 
             if (url == null) return;
 
@@ -78,7 +78,7 @@ namespace DataToolsGrasshopper.IPC.HTTP
             //var postData = "thing1=" + Uri.EscapeDataString("hello");
             //postData += "&thing2=" + Uri.EscapeDataString("world");
 
-            var data = Encoding.ASCII.GetBytes(JSONcocntent);
+            var data = Encoding.UTF8.GetBytes(JSONcontent);
 
             request.Method = "POST";
             request.ContentType = "application/json";

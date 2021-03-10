@@ -83,6 +83,26 @@ namespace DataToolsGrasshopper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons_http_get {
+            get {
+                object obj = ResourceManager.GetObject("icons_http_get", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons_http_post {
+            get {
+                object obj = ResourceManager.GetObject("icons_http_post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons_integer_gate {
             get {
                 object obj = ResourceManager.GetObject("icons_integer_gate", resourceCulture);

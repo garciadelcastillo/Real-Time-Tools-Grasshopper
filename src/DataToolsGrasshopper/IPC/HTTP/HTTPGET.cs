@@ -13,7 +13,7 @@ using Rhino.Geometry;
 
 using DataToolsGrasshopper.Utils;
 
-namespace DataToolsGrasshopper.IPC
+namespace DataToolsGrasshopper.IPC.HTTP
 {
     public class HTTPGET : GHIPCComponent
     {

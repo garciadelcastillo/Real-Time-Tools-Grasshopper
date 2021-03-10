@@ -83,9 +83,9 @@
     <Compile Include="Data\Gates\VectorGate.cs" />
     <Compile Include="GHDDTComponent.cs" />
     <Compile Include="IPC\GHIPCComponent.cs" />
-    <Compile Include="IPC\HTTP\Class1.cs" />
     <Compile Include="IPC\HTTP\HTTPGET.cs" />
     <Compile Include="IPC\HTTP\HTTPPOST.cs" />
+    <Compile Include="IPC\WebSocket\WsClientStart.cs" />
     <Compile Include="IPC\WebSocket\WsObject.cs" />
     <Compile Include="IPC\WebSocket\WsAddress.cs" />
     <Compile Include="IPC\WebSocket\WSClientSend.cs" />
@@ -120,7 +120,10 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Devices\HTCVive\" />
+    <Folder Include="Devices\Xbox\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
